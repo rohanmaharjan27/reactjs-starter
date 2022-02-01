@@ -1,0 +1,80 @@
+{
+  "name": "reactjs-starter",
+  "version": "1.0.0",
+  "description": "ReactJS Starter",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "test",
+    "start": "webpack serve",
+    "build": "webpack --mode production",
+    "start:dev": "env-cmd -f ./environments/.dev.env webpack serve",
+    "start:stg": "env-cmd -f ./environments/.stg.env webpack serve",
+    "start:prod": "env-cmd -f ./environments/.prod.env webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanmaharjan27/reactjs-starter.git"
+  },
+  "author": "Rohan Maharjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohanmaharjan27/reactjs-starter/issues"
+  },
+  "homepage": "https://github.com/rohanmaharjan27/reactjs-starter#readme",
+  "dependencies": {
+    "@sentry/react": "^6.17.3",
+    "@sentry/tracing": "^6.17.3",
+    "dotenv": "^15.0.0",
+    "dotenv-webpack": "^7.1.0",
+    "env-cmd": "^10.1.0",
+    "process": "^0.11.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "sass": "^1.49.4",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/dotenv-webpack": "^7.0.3",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "babel-jest": "^27.4.6",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.4.7",
+    "lint-staged": "^12.3.2",
+    "mini-css-extract-plugin": "^2.5.3",
+    "prettier": "^2.5.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "resetMocks": false
+  }
+}
